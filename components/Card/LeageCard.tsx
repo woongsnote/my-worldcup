@@ -1,11 +1,11 @@
-import { TeamGameResult } from "../interfaces/gameResult";
+import { TeamGameResult } from "../../interfaces/gameResult";
 
 type Props = {
   title: string;
   result: TeamGameResult[];
 };
 
-const LCard = ({ title, result }: Props) => {
+const LeageCard = ({ title, result }: Props) => {
   return (
     <div className="w-full">
       <div className="border border-gray-200  p-3 rounded-lg">
@@ -31,4 +31,4 @@ const LCard = ({ title, result }: Props) => {
   );
 };
 
-export default LCard;
+export default LeageCard;
