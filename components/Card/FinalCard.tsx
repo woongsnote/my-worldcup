@@ -15,7 +15,9 @@ const FinalCard = ({ time, result }: Props) => {
             className="flex items-center justify-center gap-10 py-2 w-full"
           >
             <div className="flex flex-col font-bold">
-              <span className="text-center text-2xl">{data.country}</span>
+              <a href={`https://www.google.com/search?q=${data.country}`}>
+                <span className="text-center text-2xl">{data.country}</span>
+              </a>
               <span className="text-center pt-2"> {data.score} </span>
               {data.penalty && (
                 <div className="text-red-400">({data.penalty})</div>

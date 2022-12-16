@@ -12,7 +12,11 @@ const TournamentCard = ({ time, result }: Props) => {
         return (
           <div key={data.country} className="flex-col gap-10 py-2 w-full">
             <div className="flex w-full ">
-              <div className="text-center w-1/2 ">{data.country}</div>
+              <div className="text-center w-1/2 ">
+                <a href={`https://www.google.com/search?q=${data.country}`}>
+                  {data.country}
+                </a>
+              </div>
               <div className="px-4 w-1/4"> {data.score}</div>
               {data.penalty && (
                 <div className="text-red-400">({data.penalty})</div>
