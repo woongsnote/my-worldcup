@@ -20,7 +20,9 @@ const FinalCard = ({ time, result }: Props) => {
               </a>
               <span className="text-center pt-2"> {data.score} </span>
               {data.penalty && (
-                <div className="text-red-400">({data.penalty})</div>
+                <span className="text-center text-red-400">
+                  ({data.penalty})
+                </span>
               )}
             </div>
           </div>
